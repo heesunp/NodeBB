@@ -35,7 +35,7 @@ function normalizeID(id, length) {
 	if (typeof id === 'string') {
 		return (id.charCodeAt(0) + id.charCodeAt(1)) % length;
 	}
-	return id %= length;
+	return id % length;
 };
 
 function buildCoverURL(selectedCover, defaultCover) {
